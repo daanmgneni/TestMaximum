@@ -5,7 +5,7 @@ namespace GenericDemo
     public class FindMax
     {
         
-    public static double MaximumNum(double FirstValue, double SecondValue, double ThirdValue)
+    public static string MaximumNum(string FirstValue, string SecondValue, string ThirdValue)
     {
             if (FirstValue.CompareTo(SecondValue) > 0 && FirstValue.CompareTo(ThirdValue) > 0 ||
                FirstValue.CompareTo(SecondValue) >= 0 && FirstValue.CompareTo(ThirdValue) > 0 ||

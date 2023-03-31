@@ -9,12 +9,12 @@ namespace GenreicDemo
         {
             Console.WriteLine("Welcome to Generic Program");
             Console.WriteLine("Please Enter the FirstValue:");
-            double num1 = Convert.ToInt32(Console.ReadLine());
+            string num1 = Console.ReadLine();
             Console.WriteLine("Please Enter the SecondValue:");
-            double num2 = Convert.ToInt32(Console.ReadLine());
+            string num2 = Console.ReadLine();
             Console.WriteLine("Please Enter the ThirdValue:");
-            double num3 = Convert.ToInt32(Console.ReadLine());
-            double val = FindMax.MaximumNum(num1, num2, num3);
+            string num3 = Console.ReadLine();
+            string val = FindMax.MaximumNum(num1, num2, num3);
             Console.WriteLine("{0} is greater", val);
         }
 
