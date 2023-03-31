@@ -1,22 +1,35 @@
-﻿using GenericDemo;
+﻿
 
 
 namespace GenreicDemo
 {
-    class Program
+
+    public class Program
     {
         public static void Main()
         {
-            Console.WriteLine("Welcome to Generic Program");
-            Console.WriteLine("Please Enter the FirstValue:");
-            string num1 = Console.ReadLine();
-            Console.WriteLine("Please Enter the SecondValue:");
-            string num2 = Console.ReadLine();
-            Console.WriteLine("Please Enter the ThirdValue:");
-            string num3 = Console.ReadLine();
-            string val = FindMax.MaximumNum(num1, num2, num3);
-            Console.WriteLine("{0} is greater", val);
-        }
+            int[] valuesInt = { 1, 2, 3, 4, 5 };
+            double[] valuesDouble = { 10.4, 6.7, 8.2, 9.5, 7.3 };
+            string[] valuesString = { "ram", "shiv", "radha" };
 
+            FindMax<int> obj = new FindMax<int>(valuesInt);
+            int MaxInt = obj.TestMaximum();
+            Console.WriteLine("Maximum value in integer is: " + MaxInt);
+            Console.WriteLine("**********************************************");
+
+
+            FindMax<double> obj1 = new FindMax<double>(valuesDouble);
+            double MaxDouble = obj1.TestMaximum();
+            Console.WriteLine("Maximum value in double is: " + MaxDouble);
+            Console.WriteLine("**********************************************");
+
+            FindMax<string> obj2 = new FindMax<string>(valuesString);
+            string MaxString = obj2.TestMaximum();
+            Console.WriteLine("Maximum value in string is: " + MaxString);
+            Console.WriteLine("**********************************************");
+
+        }
     }
+
+
 }
